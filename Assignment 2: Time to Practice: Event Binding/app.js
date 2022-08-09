@@ -21,6 +21,9 @@ const app = Vue.createApp({
       const inputvalenter = e.target.value;
       console.log(inputvalenter);
       return (this.keydownenterval = inputvalenter);
+
+      // Or instead of holding the value in a variable I could do:
+      // this.keydownenterval = e.target.value;
     },
     agein5years: function () {
       return this.age + 5;
